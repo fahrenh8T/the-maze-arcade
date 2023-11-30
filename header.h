@@ -27,7 +27,6 @@ typedef uint32_t colour_t;
  * @width: texture width
  * @height: texture height
  * @texture_buffer: pointer to texture buffer
- * @upngTexture: pointer to upng buffer
  *
  */
 typedef struct texture_k
@@ -40,5 +39,6 @@ typedef struct texture_k
 texture_t wall_textures[NUM_TEXTURES];
 
 void change_colour_intensity(colour_t *colour, float factor);
-void render_floor(int bottomwall_pixel, colour_t *texture_colour, int x)
+void render_floor(int bottomwall_pixel, colour_t *texture_colour, int x);
+
 #endif /*HEADER_H*/
