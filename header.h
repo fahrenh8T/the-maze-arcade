@@ -45,5 +45,9 @@ void change_colour_intensity(colour_t *colour, float factor);
 void render_floor(int bottomwall_pixel, colour_t *texture_colour, int x);
 void render_ceil(int topwall_pixel, colour_t texture_colour, int x);
 void render_wall(void);
+bool detect_collision(float x, float y);
+bool inside_map(float x, float y);
+int get_mapvalue(int row, int col);
+void render_map(void);
 
 #endif /*HEADER_H*/
