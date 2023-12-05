@@ -49,5 +49,8 @@ bool detect_collision(float x, float y);
 bool inside_map(float x, float y);
 int get_mapvalue(int row, int col);
 void render_map(void);
+void render_player(void);
+void move_player(float delta_time);
+
 
 #endif /*HEADER_H*/
